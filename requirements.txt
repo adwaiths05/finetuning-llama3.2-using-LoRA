@@ -1,0 +1,7 @@
+langchain 
+langchain-ollama
+langchain-community
+langserve 
+fastapi 
+uvicorn
+str
