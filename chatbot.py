@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from langchain_community.llms import Ollama
@@ -36,7 +35,7 @@ async def chat(data: dict):
 
 if __name__ == "__main__":
     import uvicorn
-=======
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from langchain_community.llms import Ollama
@@ -74,5 +73,4 @@ async def chat(data: dict):
 
 if __name__ == "__main__":
     import uvicorn
->>>>>>> 3c473dd02dbbf2c1ddcd876948925cafd714b872
     uvicorn.run(app, host="0.0.0.0", port=8000)
