@@ -3,144 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ollama Chatbot</title>
+    <title>AI Space Chatbot</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts (Orbitron) -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Internal CSS -->
     <style>
         body {
-    background-color: #f0f2f6;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.chat-container {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 500px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-h1 {
-    text-align: center;
-    color: #4CAF50;
-    margin: 0 0 20px;
-}
-
-.chat-window {
-    flex-grow: 1;
-    max-height: 400px;
-    overflow-y: auto;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.message {
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 70%;
-}
-
-.message.user {
-    background-color: #DCF8C6;
-    margin-left: auto;
-    text-align: right;
-}
-
-.message.bot {
-    background-color: #E6E6FA;
-    margin-right: auto;
-}
-
-.message p {
-    margin: 0;
-}
-
-.message small {
-    font-size: 0.8em;
-    color: #666;
-}
-
-.input-container {
-    display: flex;
-    gap: 10px;
-}
-
-input, select {
-    padding: 10px;
-    border: 2px solid #4CAF50;
-    border-radius: 5px;
-    flex-grow: 1;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-    </style>
-</head>
-<body>
-    <div class="chat-container">
-        <h1>Ollama Chatbot</h1>
-        <div class="chat-window" id="chatWindow"></div>
-        <div class="input-container">
-            <select id="toneSelect">
-                <option value="friendly">Friendly</option>
-                <option value="witty">Witty</option>
-                <option value="formal">Formal</option>
-            </select>
-            <input type="text" id="userInput" placeholder="Type your message...">
-            <button onclick="sendMessage()">Send</button>
-        </div>
-    </div>
-    <script>
-        async function sendMessage() {
-            const userInput = document.getElementById('userInput').value;
-            const tone = document.getElementById('toneSelect').value;
-            if (!userInput) return;
-
-            // Display user message
-            const chatWindow = document.getElementById('chatWindow');
-            const userMessage = document.createElement('div');
-            userMessage.className = 'message user';
-            userMessage.innerHTML = `<p>${userInput}</p><small>${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</small>`;
-            chatWindow.appendChild(userMessage);
-            document.getElementById('userInput').value = '';
-
-            // Send request to backend
-            const response = await fetch('http://localhost:8000/chat', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ input: userInput, tone: tone })
-            });
-            const data = await response.json();
-
-            // Display bot response
-            const botMessage = document.createElement('div');
-            botMessage.className = 'message bot';
-            botMessage.innerHTML = `<p>${data.output.replace(/\n/g, '<br>')}</p><small>${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</small>`;
-            chatWindow.appendChild(botMessage);
-            chatWindow.scrollTop = chatWindow.scrollHeight;
+            background: url('https://images.unsplash.com/photo-1447433693259-c8549e352d5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Orbitron', sans-serif;
+            color: #e0e0e0;
+            overflow: hidden;
         }
 
-        // Send message on Enter key
-        document.getElementById('userInput').addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') sendMessage();
+        /* Star Twinkle Animation */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 10px 10px;
+            animation: twinkle 5s infinite ease-in-out;
+            z-index: -1;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.8; }
+        }
+
+        /* Neon Colors */
+        .text-neon-blue {
+            color: #00f0ff;
+            text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+        }
+
+        .text-neon-purple {
+            color: #cc00ff;
+            text-shadow: 0 0 5px #cc00ff, 0 0 10px #cc00ff, 0 0 20px #cc00ff;
+        }
+
+        .text-neon-green {
+            color: #39ff14;
+            text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14;
+        }
+
+        .border-neon-blue {
+            border: 2px solid #00f0ff;
+            box-shadow: 0 0 10px #00f0ff;
+        }
+
+        .btn-neon-green {
+            background-color: #39ff14;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            text-shadow: 0 0 5px #39ff14;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        .btn-neon-green:hover {
+            background-color: #2ecc10;
+            box-shadow: 0 0 15px #39ff14, 0 0 30px #39ff14;
+        }
+
+        .glow {
+            transition: box-shadow 0.3s ease;
+        }
+
+        .glow:hover {
+            box-shadow: 0 0 15px #00f0ff, 0 0 30px #00f0ff;
+        }
+
+        .glow:focus {
+            box-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+        }
+
+        /* Chat Messages */
+        .user-message {
+            background-color: rgba(28, 217, 230, 0.774);
+            border: 1px solid #00f0ff;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px 10px;
+            animation: fadeIn 0.5s ease-in;
+            max-width: 80%;
+            margin-left: auto;
+            text-align: right;
+        }
+
+        .bot-message {
+            background-color: rgba(84, 227, 59, 0.799);
+            border: 1px solid #39ff14;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px 10px;
+            animation: fadeIn 0.5s ease-in;
+            max-width: 80%;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Custom Scrollbar */
+        #chat-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        #chat-container::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+
+        #chat-container::-webkit-scrollbar-thumb {
+            background: #00f0ff;
+            border-radius: 4px;
+            box-shadow: 0 0 10px #00f0ff;
+        }
+
+        /* Card Styling */
+        .card {
+            background: rgba(20, 20, 20, 0.8);
+            border: 1px solid #00f0ff;
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+        }
+
+        .form-select, .form-control {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            border: 1px solid #00f0ff;
+        }
+
+        .form-select:focus, .form-control:focus {
+            border-color: #39ff14;
+            box-shadow: 0 0 10px #39ff14;
+        }
+
+        /* Pulse Animation for Button */
+        @keyframes pulse {
+            0% { box-shadow: 0 0 10px #39ff14; }
+            50% { box-shadow: 0 0 20px #39ff14, 0 0 40px #39ff14; }
+            100% { box-shadow: 0 0 10px #39ff14; }
+        }
+    </style>
+</head>
+<body class="bg-dark text-light">
+    <div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center">
+        <h1 class="display-4 text-neon-blue mb-4 text-center glow">AI Space Chatbot</h1>
+        <div class="card shadow-lg w-100" style="max-width: 600px;">
+            <div class="card-body p-4">
+                <!-- Tone Selector -->
+                <div class="mb-3">
+                    <label for="tone" class="form-label text-neon-purple">Select Tone:</label>
+                    <select id="tone" class="form-select bg-dark text-light border-neon-blue">
+                        <option value="friendly">Friendly</option>
+                        <option value="formal">Formal</option>
+                        <option value="witty">Witty</option>
+                    </select>
+                </div>
+                <!-- Chat Display -->
+                <div id="chat-container" class="border rounded p-3 mb-3 bg-dark" style="height: 400px; overflow-y: auto;">
+                    <div id="chat-messages"></div>
+                </div>
+                <!-- Input Form -->
+                <form id="chat-form" class="d-flex">
+                    <input type="text" id="user-input" class="form-control me-2 bg-dark text-light border-neon-blue glow" placeholder="Ask about AI in space..." autocomplete="off">
+                    <button type="submit" class="btn btn-neon-green">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        const chatForm = document.getElementById('chat-form');
+        const userInput = document.getElementById('user-input');
+        const toneSelect = document.getElementById('tone');
+        const chatMessages = document.getElementById('chat-messages');
+        const chatContainer = document.getElementById('chat-container');
+
+        chatForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const message = userInput.value.trim();
+            const tone = toneSelect.value;
+            if (!message) return;
+
+            // Add user message
+            const userMessage = document.createElement('div');
+            userMessage.className = 'user-message';
+            userMessage.textContent = `You: ${message}`;
+            chatMessages.appendChild(userMessage);
+
+            // Clear input
+            userInput.value = '';
+
+            // Scroll to bottom
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+
+            // Send request to FastAPI
+            try {
+                const response = await fetch('http://localhost:8000/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ input: message, tone: tone })
+                });
+                const data = await response.json();
+
+                // Add bot response
+                const botMessage = document.createElement('div');
+                botMessage.className = 'bot-message';
+                botMessage.innerHTML = `AI: ${data.output.replace(/\n/g, '<br>')}`;
+                chatMessages.appendChild(botMessage);
+
+                // Scroll to bottom
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            } catch (error) {
+                console.error('Error:', error);
+                const errorMessage = document.createElement('div');
+                errorMessage.className = 'bot-message text-danger';
+                errorMessage.textContent = 'AI: Error connecting to server.';
+                chatMessages.appendChild(errorMessage);
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            }
         });
     </script>
 </body>
