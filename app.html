@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ollama Chatbot</title>
+    <style>
+        body {
+    background-color: #f0f2f6;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin: 0 0 20px;
+}
+
+.chat-window {
+    flex-grow: 1;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.message.user {
+    background-color: #DCF8C6;
+    margin-left: auto;
+    text-align: right;
+}
+
+.message.bot {
+    background-color: #E6E6FA;
+    margin-right: auto;
+}
+
+.message p {
+    margin: 0;
+}
+
+.message small {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+input, select {
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Ollama Chatbot</h1>
+        <div class="chat-window" id="chatWindow"></div>
+        <div class="input-container">
+            <select id="toneSelect">
+                <option value="friendly">Friendly</option>
+                <option value="witty">Witty</option>
+                <option value="formal">Formal</option>
+            </select>
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script>
+        async function sendMessage() {
+            const userInput = document.getElementById('userInput').value;
+            const tone = document.getElementById('toneSelect').value;
+            if (!userInput) return;
+
+            // Display user message
+            const chatWindow = document.getElementById('chatWindow');
+            const userMessage = document.createElement('div');
+            userMessage.className = 'message user';
+            userMessage.innerHTML = `<p>${userInput}</p><small>${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</small>`;
+            chatWindow.appendChild(userMessage);
+            document.getElementById('userInput').value = '';
+
+            // Send request to backend
+            const response = await fetch('http://localhost:8000/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ input: userInput, tone: tone })
+            });
+            const data = await response.json();
+
+            // Display bot response
+            const botMessage = document.createElement('div');
+            botMessage.className = 'message bot';
+            botMessage.innerHTML = `<p>${data.output.replace(/\n/g, '<br>')}</p><small>${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</small>`;
+            chatWindow.appendChild(botMessage);
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+        }
+
+        // Send message on Enter key
+        document.getElementById('userInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+    </script>
+</body>
+</html>
