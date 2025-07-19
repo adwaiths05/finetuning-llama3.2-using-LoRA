@@ -1,262 +1,523 @@
-[
-    {
-        "query": "What is the role of AI in space exploration?",
-        "answer": "- AI enhances spacecraft autonomy, data analysis, and mission planning.\n- It enables real-time decision-making and reduces human intervention.",
-        "documents": ["AI is critical for managing complex space missions, from autonomous navigation to analyzing vast datasets."][](https://www.spacedaily.com/reports/The_Role_of_Artificial_Intelligence_in_Space_Exploration_999.html)
-    },
-    {
-        "query": "How does NASA use AI in its missions?",
-        "answer": "- NASA uses AI for autonomous rovers, mission planning, and data analysis.\n- Examples include AEGIS for data collection and ASPEN for scheduling.",
-        "documents": ["NASA’s AI applications include AEGIS for autonomous science data collection and ASPEN for optimizing mission schedules."][](https://www.nasa.gov/general/2024-ai-use-cases/)
-    },
-    {
-        "query": "What is AEGIS in NASA’s missions?",
-        "answer": "- AEGIS is an AI system for autonomous science data collection.\n- It helps rovers like Perseverance identify and analyze targets.",
-        "documents": ["AEGIS enables planetary rovers to autonomously select and collect scientific data."][](https://www.nasa.gov/general/2024-ai-use-cases/)
-    },
-    {
-        "query": "How does AI improve rover navigation on Mars?",
-        "answer": "- AI enables rovers to navigate rough terrain autonomously.\n- Systems like Enhanced AutoNav make real-time path decisions.",
-        "documents": ["Enhanced AutoNav uses AI to allow Mars rovers to navigate autonomously, avoiding obstacles."][](https://www.nasa.gov/general/2024-ai-use-cases/)
-    },
-    {
-        "query": "What is the SPOC system on Mars rovers?",
-        "answer": "- SPOC is an AI-based system for classifying soil and objects.\n- It analyzes environmental features for Mars exploration.",
-        "documents": ["SPOC uses AI to classify soil properties and objects on Mars, aiding scientific analysis."][](https://www.nasa.gov/general/2024-ai-use-cases/)
-    },
-    {
-        "query": "What is the ASPEN mission planner?",
-        "answer": "- ASPEN is an AI tool for streamlining mission planning.\n- It optimizes schedules and resource allocation for space missions.",
-        "documents": ["ASPEN is an AI-assisted mission planner that enhances efficiency in space operations."][](https://www.nasa.gov/general/2024-ai-use-cases/)
-    },
-    {
-        "query": "How does AI help with space debris management?",
-        "answer": "- AI tracks and predicts space debris to avoid collisions.\n- It supports missions like ClearSpace-1 for debris removal.",
-        "documents": ["AI is used to monitor space debris and plan collision avoidance maneuvers."][](https://www.linkedin.com/pulse/top-5-spacetech-trends-look-out-2023-hello-space-systems)
-    },
-    {
-        "query": "What is ESA’s Space Rider mission in 2025?",
-        "answer": "- Space Rider is an uncrewed robotic spaceplane launching in Q3 2025.\n- It conducts microgravity experiments and returns to Earth.",
-        "documents": ["ESA’s Space Rider will perform in-orbit experiments and land for reuse in 2025."][](https://www.livescience.com/space/space-exploration/coolest-space-missions-coming-in-2025)
-    },
-    {
-        "query": "How does AI assist ESA’s Space Rider?",
-        "answer": "- AI enables autonomous navigation and experiment management.\n- It processes data in real-time during low Earth orbit operations.",
-        "documents": ["AI supports Space Rider’s autonomous operations and data processing in orbit."][](https://www.livescience.com/space/space-exploration/coolest-space-missions-coming-in-2025)
-    },
-    {
-        "query": "What is NASA’s Blue Ghost mission in 2025?",
-        "answer": "- Blue Ghost is a lunar lander mission launching in January 2025.\n- It studies lunar regolith with AI-driven tools like EDS and SCALPSS.",
-        "documents": ["Blue Ghost delivers AI-based technologies to study lunar dust interactions."][](https://www.nasa.gov/missions/nasa-space-techs-favorite-place-to-travel-in-2025-the-moon/)
-    },
-    {
-        "query": "What is the Electrodynamic Dust Shield (EDS)?",
-        "answer": "- EDS uses electric fields to remove lunar dust from surfaces.\n- It protects equipment during NASA’s Blue Ghost mission.",
-        "documents": ["EDS repels lunar dust using electric fields to safeguard mission hardware."][](https://www.nasa.gov/missions/nasa-space-techs-favorite-place-to-travel-in-2025-the-moon/)
-    },
-    {
-        "query": "What is SCALPSS in lunar missions?",
-        "answer": "- SCALPSS is a stereo camera system for studying rocket plume effects.\n- It captures high-resolution images during lunar landings.",
-        "documents": ["SCALPSS uses stereo imaging to analyze lunar regolith erosion during landings."][](https://www.nasa.gov/missions/nasa-space-techs-favorite-place-to-travel-in-2025-the-moon/)
-    },
-    {
-        "query": "What is SpaceX’s Starship propellant transfer test in 2025?",
-        "answer": "- SpaceX will test propellant transfer between Starships in March 2025.\n- It’s key for lunar and Mars missions via in-orbit refueling.",
-        "documents": ["SpaceX’s 2025 test involves transferring propellant in low Earth orbit for deep space missions."][](https://www.livescience.com/space/space-exploration/coolest-space-missions-coming-in-2025)
-    },
-    {
-        "query": "How does AI support SpaceX’s Starship missions?",
-        "answer": "- AI enables autonomous navigation and collision avoidance.\n- It optimizes trajectory and refueling operations.",
-        "documents": ["AI algorithms ensure SpaceX satellites and Starships avoid collisions and optimize paths."][](https://www.forbes.com/sites/bernardmarr/2023/04/10/artificial-intelligence-in-space-the-amazing-ways-machine-learning-is-helping-to-unravel-the-mysteries-of-the-universe/)
-    },
-    {
-        "query": "What is the NISAR mission in 2025?",
-        "answer": "- NISAR is a NASA-ISRO mission launching in March 2025.\n- It uses radar to monitor Earth’s land and ice weekly.",
-        "documents": ["NISAR employs AI to analyze radar data for Earth observation."][](https://www.livescience.com/space/space-exploration/coolest-space-missions-coming-in-2025)
-    },
-    {
-        "query": "How does AI enhance the NISAR mission?",
-        "answer": "- AI processes large radar datasets for land and ice monitoring.\n- It detects patterns and anomalies in Earth’s surface.",
-        "documents": ["AI accelerates analysis of NISAR’s radar imagery for environmental monitoring."][](https://www.livescience.com/space/space-exploration/coolest-space-missions-coming-in-2025)
-    },
-    {
-        "query": "What is NASA’s ESCAPADE mission?",
-        "answer": "- ESCAPADE involves two satellites studying Mars’ atmosphere in 2025.\n- Named Blue and Gold, they analyze plasma and magnetic fields.",
-        "documents": ["ESCAPADE satellites use AI to study Mars’ atmospheric loss in 2025."][](https://www.livescience.com/space/space-exploration/coolest-space-missions-coming-in-2025)
-    },
-    {
-        "query": "How does AI assist ESCAPADE satellites?",
-        "answer": "- AI processes data on Mars’ plasma and magnetic fields.\n- It enables autonomous data selection and transmission.",
-        "documents": ["AI helps ESCAPADE satellites prioritize and analyze atmospheric data."][](https://www.livescience.com/space/space-exploration/coolest-space-missions-coming-in-2025)
-    },
-    {
-        "query": "What is AI-driven autonomous navigation in space?",
-        "answer": "- Autonomous navigation uses AI for real-time path adjustments.\n- It reduces reliance on Earth-based commands for deep space missions.",
-        "documents": ["AI enables spacecraft to navigate independently, critical for deep space exploration."][](https://rocketbreaks.com/the-role-of-artificial-intelligence-in-future-space-missions/)
-    },
-    {
-        "query": "How does AI help analyze satellite imagery?",
-        "answer": "- AI processes vast image datasets to detect patterns.\n- It identifies changes in Earth or celestial bodies rapidly.",
-        "documents": ["AI algorithms analyze satellite imagery for real-time insights."][](https://www.aiacceleratorinstitute.com/ai-in-space-exploration/)
-    },
-    {
-        "query": "What is the role of AI in astronaut training?",
-        "answer": "- AI creates realistic simulations using XR technologies.\n- It enhances training for space conditions and mission scenarios.",
-        "documents": ["AI-powered XR simulations mimic space environments for astronaut training."][](https://blogs.esa.int/exploration/the-power-of-ai-in-space-exploration/)
-    },
-    {
-        "query": "What is ESA’s Hera mission?",
-        "answer": "- Hera is a planetary defense mission to study an asteroid.\n- It uses AI for autonomous navigation toward its target.",
-        "documents": ["Hera employs AI to navigate autonomously to an asteroid for planetary defense."][](https://www.esa.int/Enabling_Support/Preparing_for_the_Future/Discovery_and_Preparation/Artificial_intelligence_in_space)
-    },
-    {
-        "query": "How does AI support the Hera mission?",
-        "answer": "- AI enables Hera to fuse sensor data for autonomous decisions.\n- It mimics self-driving car technology for asteroid navigation.",
-        "documents": ["Hera’s AI processes sensor data for real-time navigation decisions."][](https://www.esa.int/Enabling_Support/Preparing_for_the_Future/Discovery_and_Preparation/Artificial_intelligence_in_space)
-    },
-    {
-        "query": "What is the Artemis program in 2025?",
-        "answer": "- Artemis aims to return humans to the Moon by 2027.\n- In 2025, it focuses on lunar tech demonstrations and AI robotics.",
-        "documents": ["Artemis uses AI for lunar robotics and mission planning in 2025."][](https://www.startus-insights.com/innovators-guide/space-technology-trends/)
-    },
-    {
-        "query": "How does AI contribute to Artemis?",
-        "answer": "- AI powers autonomous robots for lunar construction.\n- It optimizes mission planning and resource use.",
-        "documents": ["AI enables Artemis robots to build lunar infrastructure autonomously."][](https://www.startus-insights.com/innovators-guide/space-technology-trends/)
-    },
-    {
-        "query": "What is AI’s role in space situational awareness?",
-        "answer": "- AI tracks satellites and debris for collision avoidance.\n- It enhances safety in crowded orbits.",
-        "documents": ["AI improves space situational awareness by tracking objects in orbit."][](https://www.orfonline.org/research/ai-in-space-operations-opportunities-and-challenges)
-    },
-    {
-        "query": "How does AI optimize satellite constellations?",
-        "answer": "- AI manages satellite operations and collision avoidance.\n- It reduces ground operator workload for mega-constellations.",
-        "documents": ["AI optimizes satellite constellation management for efficiency."][](https://spacegeneration.org/the-future-of-ai-in-space-navigating-challenges-and-opportunities)
-    },
-    {
-        "query": "What is the role of AI in lunar dust management?",
-        "answer": "- AI analyzes dust interactions during lunar landings.\n- Tools like SCALPSS predict regolith erosion for safer missions.",
-        "documents": ["AI studies lunar dust to improve landing safety and equipment protection."][](https://www.nasa.gov/missions/nasa-space-techs-favorite-place-to-travel-in-2025-the-moon/)
-    },
-    {
-        "query": "What is the Axiom Mission 4 in 2025?",
-        "answer": "- Axiom Mission 4 sends an Indian astronaut to the ISS in April 2025.\n- AI optimizes mission operations and crew support.",
-        "documents": ["Axiom Mission 4 uses AI for efficient ISS operations in 2025."][](https://www.livescience.com/space/space-exploration/coolest-space-missions-coming-in-2025)
-    },
-    {
-        "query": "How does AI aid ISS operations?",
-        "answer": "- AI schedules tasks and monitors systems on the ISS.\n- It supports astronauts with virtual assistants.",
-        "documents": ["AI enhances ISS efficiency with task scheduling and virtual assistants."][](https://www.esa.int/Enabling_Support/Preparing_for_the_Future/Discovery_and_Preparation/Artificial_intelligence_in_space)
-    },
-    {
-        "query": "What is AI’s role in deep space probes?",
-        "answer": "- AI enables probes to make autonomous scientific discoveries.\n- It selects and transmits valuable data without Earth commands.",
-        "documents": ["AI-driven probes autonomously explore deep space and prioritize data."][](https://www.spacedaily.com/reports/The_Role_of_Artificial_Intelligence_in_Space_Exploration_999.html)
-    },
-    {
-        "query": "How does AI improve mission planning?",
-        "answer": "- AI optimizes schedules and resource allocation.\n- Tools like ASPEN streamline complex mission timelines.",
-        "documents": ["AI tools like ASPEN enhance mission planning efficiency."][](https://www.nasa.gov/general/2024-ai-use-cases/)
-    },
-    {
-        "query": "What is the ClearSpace-1 mission?",
-        "answer": "- ClearSpace-1 is a 2025 mission to remove space debris.\n- It uses AI for precise targeting and capture.",
-        "documents": ["ClearSpace-1 employs AI to capture and remove orbital debris."][](https://www.linkedin.com/pulse/top-5-spacetech-trends-look-out-2023-hello-space-systems)
-    },
-    {
-        "query": "How does AI support space robotics?",
-        "answer": "- AI enables robots to perform autonomous tasks like repairs.\n- Examples include InspeCity’s RAMA for satellite maintenance.",
-        "documents": ["AI powers autonomous robots for in-orbit satellite repairs."][](https://www.startus-insights.com/innovators-guide/space-technology-trends/)
-    },
-    {
-        "query": "What is India’s IndiaAI mission?",
-        "answer": "- IndiaAI is a 2024 initiative to build AI infrastructure.\n- It supports space tech with cost-effective AI solutions.",
-        "documents": ["IndiaAI fosters AI development for space and other sectors."][](https://www.orfonline.org/research/ai-in-space-operations-opportunities-and-challenges)
-    },
-    {
-        "query": "How does AI enhance Chandrayaan-3?",
-        "answer": "- AI improves navigation and data analysis for lunar missions.\n- It supports Chandrayaan-3’s rover and lander operations.",
-        "documents": ["AI aids Chandrayaan-3 with autonomous navigation and data processing."][](https://www.orfonline.org/research/ai-in-space-operations-opportunities-and-challenges)
-    },
-    {
-        "query": "What is AI-driven generative design in space?",
-        "answer": "- Generative design uses AI to optimize spacecraft components.\n- It creates lighter, stronger designs for missions.",
-        "documents": ["AI-driven generative design produces efficient spacecraft parts."][](https://nstxl.org/ai-driven-advancements-in-space/)
-    },
-    {
-        "query": "How does AI help detect exoplanets?",
-        "answer": "- AI analyzes starlight dips to identify exoplanets.\n- It processes Kepler telescope data for planetary discoveries.",
-        "documents": ["AI detects exoplanets by analyzing light patterns from stars."][](https://www.forbes.com/sites/bernardmarr/2023/04/10/artificial-intelligence-in-space-the-amazing-ways-machine-learning-is-helping-to-unravel-the-mysteries-of-the-universe/)
-    },
-    {
-        "query": "What is AI’s role in space weather prediction?",
-        "answer": "- AI predicts solar flares and space weather events.\n- It analyzes satellite data for accurate forecasts.",
-        "documents": ["AI enhances space weather prediction using satellite data."][](https://spacegeneration.org/the-future-of-ai-in-space-navigating-challenges-and-opportunities)
-    },
-    {
-        "query": "How does AI support lunar habitat construction?",
-        "answer": "- AI designs and controls robots for lunar construction.\n- It optimizes structures like LUNGS for sustainability.",
-        "documents": ["AI enables robots to build sustainable lunar habitats."][](https://www.nasa.gov/news-release/nasa-awards-2025-innovative-technology-concept-studies/)
-    },
-    {
-        "query": "What is the Helicity Drive in 2025?",
-        "answer": "- Helicity Drive is a fusion propulsion system for spacecraft.\n- It’s studied in 2025 for heliosphere exploration.",
-        "documents": ["Helicity Drive uses AI to optimize fusion propulsion for deep space."][](https://www.nasa.gov/news-release/nasa-awards-2025-innovative-technology-concept-studies/)
-    },
-    {
-        "query": "How does AI improve spacecraft manufacturing?",
-        "answer": "- AI optimizes 3D printing for rocket production.\n- It enhances material use and structural integrity.",
-        "documents": ["AI-driven 3D printing streamlines spacecraft manufacturing."][](https://nstxl.org/ai-driven-advancements-in-space/)
-    },
-    {
-        "query": "What is AI’s role in orbital mechanics?",
-        "answer": "- AI calculates optimal trajectories and orbits.\n- It enhances efficiency for satellite and mission paths.",
-        "documents": ["AI optimizes orbital mechanics for spacecraft navigation."][](https://nstxl.org/ai-driven-advancements-in-space/)
-    },
-    {
-        "query": "How does AI assist in space cybersecurity?",
-        "answer": "- AI detects and prevents cyberattacks on space systems.\n- It protects mission data from adversarial threats.",
-        "documents": ["AI safeguards space systems against cyber vulnerabilities."][](https://spacegeneration.org/the-future-of-ai-in-space-navigating-challenges-and-opportunities)
-    },
-    {
-        "query": "What is the Rosalind Franklin rover?",
-        "answer": "- Rosalind Franklin is ESA’s Mars rover for 2028.\n- In 2025, AI enhances its autonomous navigation tests.",
-        "documents": ["AI supports Rosalind Franklin’s autonomous Martian exploration."][](https://blogs.esa.int/exploration/the-power-of-ai-in-space-exploration/)
-    },
-    {
-        "query": "How does AI help with space data processing?",
-        "answer": "- AI processes massive datasets from satellites and rovers.\n- It extracts insights faster than human analysis.",
-        "documents": ["AI accelerates data processing for space missions."][](https://www.aiacceleratorinstitute.com/ai-in-space-exploration/)
-    },
-    {
-        "query": "What is the role of AI in space-based solar power?",
-        "answer": "- AI optimizes energy collection and transmission.\n- It supports sustainable power for space missions.",
-        "documents": ["AI enhances space-based solar power systems for efficiency."][](https://hexstaruniverse.com/key-space-trends-2025/)
-    },
-    {
-        "query": "How does AI aid in asteroid mining?",
-        "answer": "- AI identifies resource-rich asteroids.\n- It optimizes robotic mining operations in space.",
-        "documents": ["AI supports asteroid mining by analyzing resource potential."][](https://www.linkedin.com/pulse/top-5-spacetech-trends-look-out-2023-hello-space-systems)
-    },
-    {
-        "query": "What is AI’s role in the lunar Gateway?",
-        "answer": "- AI optimizes operations for the lunar Gateway station.\n- It supports autonomous systems and crew assistance.",
-        "documents": ["AI enhances lunar Gateway operations with autonomy."][](https://blogs.esa.int/exploration/the-power-of-ai-in-space-exploration/)
-    },
-    {
-        "query": "How does AI improve rocket trajectory optimization?",
-        "answer": "- AI calculates fuel-efficient rocket paths.\n- It adjusts trajectories in real-time for accuracy.",
-        "documents": ["AI optimizes rocket trajectories for efficiency and safety."][](https://analyticsindiamag.com/ai-trends/top-trends-that-will-dominate-the-spacetech-industry-in-2023/)
-    },
-    {
-        "query": "What is the role of AI in exomoon exploration?",
-        "answer": "- AI analyzes data from moons like Europa or Titan.\n- It supports autonomous probes for potential life detection.",
-        "documents": ["AI aids exploration of exomoons for signs of life."][](https://www.forbes.com/sites/bernardmarr/2023/04/10/artificial-intelligence-in-space-the-amazing-ways-machine-learning-is-helping-to-unravel-the-mysteries-of-the-universe/)
-    },
-    {
-        "query": "How does AI support space mission safety?",
-        "answer": "- AI monitors systems for anomalies and predicts failures.\n- It enhances safety through real-time decision-making.",
-        "documents": ["AI improves mission safety by detecting anomalies early."][](https://www.spacedaily.com/reports/The_Role_of_Artificial_Intelligence_in_Space_Exploration_999.html)
-    }
-]
+
+    [
+        {
+            "query": "What is the role of AI in space exploration?",
+            "answer": "- AI enhances spacecraft autonomy, data analysis, and mission planning.\n- It enables real-time decision-making and reduces human intervention.",
+            "documents": [
+                {
+                    "text": "AI is critical for managing complex space missions, from autonomous navigation to analyzing vast datasets.",
+                    "url": "https://www.spacedaily.com/reports/The_Role_of_Artificial_Intelligence_in_Space_Exploration_999.html"
+                }
+            ]
+        },
+        {
+            "query": "How does NASA use AI in its missions?",
+            "answer": "- NASA uses AI for autonomous rovers, mission planning, and data analysis.\n- Examples include AEGIS for data collection and ASPEN for scheduling.",
+            "documents": [
+                {
+                    "text": "NASA’s AI applications include AEGIS for autonomous science data collection and ASPEN for optimizing mission schedules.",
+                    "url": "https://www.nasa.gov/general/2024-ai-use-cases/"
+                }
+            ]
+        },
+        {
+            "query": "What is AEGIS in NASA’s missions?",
+            "answer": "- AEGIS is an AI system for autonomous science data collection.\n- It helps rovers like Perseverance identify and analyze targets.",
+            "documents": [
+                {
+                    "text": "AEGIS enables planetary rovers to autonomously select and collect scientific data.",
+                    "url": "https://www.nasa.gov/general/2024-ai-use-cases/"
+                }
+            ]
+        },
+        {
+            "query": "How does AI improve rover navigation on Mars?",
+            "answer": "- AI enables rovers to navigate rough terrain autonomously.\n- Systems like Enhanced AutoNav make real-time path decisions.",
+            "documents": [
+                {
+                    "text": "Enhanced AutoNav uses AI to allow Mars rovers to navigate autonomously, avoiding obstacles.",
+                    "url": "https://www.nasa.gov/general/2024-ai-use-cases/"
+                }
+            ]
+        },
+        {
+            "query": "What is the SPOC system on Mars rovers?",
+            "answer": "- SPOC is an AI-based system for classifying soil and objects.\n- It analyzes environmental features for Mars exploration.",
+            "documents": [
+                {
+                    "text": "SPOC uses AI to classify soil properties and objects on Mars, aiding scientific analysis.",
+                    "url": "https://www.nasa.gov/general/2024-ai-use-cases/"
+                }
+            ]
+        },
+        {
+            "query": "What is the ASPEN mission planner?",
+            "answer": "- ASPEN is an AI tool for streamlining mission planning.\n- It optimizes schedules and resource allocation for space missions.",
+            "documents": [
+                {
+                    "text": "ASPEN is an AI-assisted mission planner that enhances efficiency in space operations.",
+                    "url": "https://www.nasa.gov/general/2024-ai-use-cases/"
+                }
+            ]
+        },
+        {
+            "query": "How does AI help with space debris management?",
+            "answer": "- AI tracks and predicts space debris to avoid collisions.\n- It supports missions like ClearSpace-1 for debris removal.",
+            "documents": [
+                {
+                    "text": "AI is used to monitor space debris and plan collision avoidance maneuvers.",
+                    "url": "https://www.linkedin.com/pulse/top-5-spacetech-trends-look-out-2023-hello-space-systems"
+                }
+            ]
+        },
+        {
+            "query": "What is ESA’s Space Rider mission in 2025?",
+            "answer": "- Space Rider is an uncrewed robotic spaceplane launching in Q3 2025.\n- It conducts microgravity experiments and returns to Earth.",
+            "documents": [
+                {
+                    "text": "ESA’s Space Rider will perform in-orbit experiments and land for reuse in 2025.",
+                    "url": "https://www.livescience.com/space/space-exploration/coolest-space-missions-coming-in-2025"
+                }
+            ]
+        },
+        {
+            "query": "How does AI assist ESA’s Space Rider?",
+            "answer": "- AI enables autonomous navigation and experiment management.\n- It processes data in real-time during low Earth orbit operations.",
+            "documents": [
+                {
+                    "text": "AI supports Space Rider’s autonomous operations and data processing in orbit.",
+                    "url": "https://www.livescience.com/space/space-exploration/coolest-space-missions-coming-in-2025"
+                }
+            ]
+        },
+        {
+            "query": "What is NASA’s Blue Ghost mission in 2025?",
+            "answer": "- Blue Ghost is a lunar lander mission launching in January 2025.\n- It studies lunar regolith with AI-driven tools like EDS and SCALPSS.",
+            "documents": [
+                {
+                    "text": "Blue Ghost delivers AI-based technologies to study lunar dust interactions.",
+                    "url": "https://www.nasa.gov/missions/nasa-space-techs-favorite-place-to-travel-in-2025-the-moon/"
+                }
+            ]
+        },
+        {
+            "query": "What is the Electrodynamic Dust Shield (EDS)?",
+            "answer": "- EDS uses electric fields to remove lunar dust from surfaces.\n- It protects equipment during NASA’s Blue Ghost mission.",
+            "documents": [
+                {
+                    "text": "EDS repels lunar dust using electric fields to safeguard mission hardware.",
+                    "url": "https://www.nasa.gov/missions/nasa-space-techs-favorite-place-to-travel-in-2025-the-moon/"
+                }
+            ]
+        },
+        {
+            "query": "What is SCALPSS in lunar missions?",
+            "answer": "- SCALPSS is a stereo camera system for studying rocket plume effects.\n- It captures high-resolution images during lunar landings.",
+            "documents": [
+                {
+                    "text": "SCALPSS uses stereo imaging to analyze lunar regolith erosion during landings.",
+                    "url": "https://www.nasa.gov/missions/nasa-space-techs-favorite-place-to-travel-in-2025-the-moon/"
+                }
+            ]
+        },
+        {
+            "query": "What is SpaceX’s Starship propellant transfer test in 2025?",
+            "answer": "- SpaceX will test propellant transfer between Starships in March 2025.\n- It’s key for lunar and Mars missions via in-orbit refueling.",
+            "documents": [
+                {
+                    "text": "SpaceX’s 2025 test involves transferring propellant in low Earth orbit for deep space missions.",
+                    "url": "https://www.livescience.com/space/space-exploration/coolest-space-missions-coming-in-2025"
+                }
+            ]
+        },
+        {
+            "query": "How does AI support SpaceX’s Starship missions?",
+            "answer": "- AI enables autonomous navigation and collision avoidance.\n- It optimizes trajectory and refueling operations.",
+            "documents": [
+                {
+                    "text": "AI algorithms ensure SpaceX satellites and Starships avoid collisions and optimize paths.",
+                    "url": "https://www.forbes.com/sites/bernardmarr/2023/04/10/artificial-intelligence-in-space-the-amazing-ways-machine-learning-is-helping-to-unravel-the-mysteries-of-the-universe/"
+                }
+            ]
+        },
+        {
+            "query": "What is the NISAR mission in 2025?",
+            "answer": "- NISAR is a NASA-ISRO mission launching in March 2025.\n- It uses radar to monitor Earth’s land and ice weekly.",
+            "documents": [
+                {
+                    "text": "NISAR employs AI to analyze radar data for Earth observation.",
+                    "url": "https://www.livescience.com/space/space-exploration/coolest-space-missions-coming-in-2025"
+                }
+            ]
+        },
+        {
+            "query": "How does AI enhance the NISAR mission?",
+            "answer": "- AI processes large radar datasets for land and ice monitoring.\n- It detects patterns and anomalies in Earth’s surface.",
+            "documents": [
+                {
+                    "text": "AI accelerates analysis of NISAR’s radar imagery for environmental monitoring.",
+                    "url": "https://www.livescience.com/space/space-exploration/coolest-space-missions-coming-in-2025"
+                }
+            ]
+        },
+        {
+            "query": "What is NASA’s ESCAPADE mission?",
+            "answer": "- ESCAPADE involves two satellites studying Mars’ atmosphere in 2025.\n- Named Blue and Gold, they analyze plasma and magnetic fields.",
+            "documents": [
+                {
+                    "text": "ESCAPADE satellites use AI to study Mars’ atmospheric loss in 2025.",
+                    "url": "https://www.livescience.com/space/space-exploration/coolest-space-missions-coming-in-2025"
+                }
+            ]
+        },
+        {
+            "query": "How does AI assist ESCAPADE satellites?",
+            "answer": "- AI processes data on Mars’ plasma and magnetic fields.\n- It enables autonomous data selection and transmission.",
+            "documents": [
+                {
+                    "text": "AI helps ESCAPADE satellites prioritize and analyze atmospheric data.",
+                    "url": "https://www.livescience.com/space/space-exploration/coolest-space-missions-coming-in-2025"
+                }
+            ]
+        },
+        {
+            "query": "What is AI-driven autonomous navigation in space?",
+            "answer": "- Autonomous navigation uses AI for real-time path adjustments.\n- It reduces reliance on Earth-based commands for deep space missions.",
+            "documents": [
+                {
+                    "text": "AI enables spacecraft to navigate independently, critical for deep space exploration.",
+                    "url": "https://rocketbreaks.com/the-role-of-artificial-intelligence-in-future-space-missions/"
+                }
+            ]
+        },
+        {
+            "query": "How does AI help analyze satellite imagery?",
+            "answer": "- AI processes vast image datasets to detect patterns.\n- It identifies changes in Earth or celestial bodies rapidly.",
+            "documents": [
+                {
+                    "text": "AI algorithms analyze satellite imagery for real-time insights.",
+                    "url": "https://www.aiacceleratorinstitute.com/ai-in-space-exploration/"
+                }
+            ]
+        },
+        {
+            "query": "What is the role of AI in astronaut training?",
+            "answer": "- AI creates realistic simulations using XR technologies.\n- It enhances training for space conditions and mission scenarios.",
+            "documents": [
+                {
+                    "text": "AI-powered XR simulations mimic space environments for astronaut training.",
+                    "url": "https://blogs.esa.int/exploration/the-power-of-ai-in-space-exploration/"
+                }
+            ]
+        },
+        {
+            "query": "What is ESA’s Hera mission?",
+            "answer": "- Hera is a planetary defense mission to study an asteroid.\n- It uses AI for autonomous navigation toward its target.",
+            "documents": [
+                {
+                    "text": "Hera employs AI to navigate autonomously to an asteroid for planetary defense.",
+                    "url": "https://www.esa.int/Enabling_Support/Preparing_for_the_Future/Discovery_and_Preparation/Artificial_intelligence_in_space"
+                }
+            ]
+        },
+        {
+            "query": "How does AI support the Hera mission?",
+            "answer": "- AI enables Hera to fuse sensor data for autonomous decisions.\n- It mimics self-driving car technology for asteroid navigation.",
+            "documents": [
+                {
+                    "text": "Hera’s AI processes sensor data for real-time navigation decisions.",
+                    "url": "https://www.esa.int/Enabling_Support/Preparing_for_the_Future/Discovery_and_Preparation/Artificial_intelligence_in_space"
+                }
+            ]
+        },
+        {
+            "query": "What is the Artemis program in 2025?",
+            "answer": "- Artemis aims to return humans to the Moon by 2027.\n- In 2025, it focuses on lunar tech demonstrations and AI robotics.",
+            "documents": [
+                {
+                    "text": "Artemis uses AI for lunar robotics and mission planning in 2025.",
+                    "url": "https://www.startus-insights.com/innovators-guide/space-technology-trends/"
+                }
+            ]
+        },
+        {
+            "query": "How does AI contribute to Artemis?",
+            "answer": "- AI powers autonomous robots for lunar construction.\n- It optimizes mission planning and resource use.",
+            "documents": [
+                {
+                    "text": "AI enables Artemis robots to build lunar infrastructure autonomously.",
+                    "url": "https://www.startus-insights.com/innovators-guide/space-technology-trends/"
+                }
+            ]
+        },
+        {
+            "query": "What is AI’s role in space situational awareness?",
+            "answer": "- AI tracks satellites and debris for collision avoidance.\n- It enhances safety in crowded orbits.",
+            "documents": [
+                {
+                    "text": "AI improves space situational awareness by tracking objects in orbit.",
+                    "url": "https://www.orfonline.org/research/ai-in-space-operations-opportunities-and-challenges"
+                }
+            ]
+        },
+        {
+            "query": "How does AI optimize satellite constellations?",
+            "answer": "- AI manages satellite operations and collision avoidance.\n- It reduces ground operator workload for mega-constellations.",
+            "documents": [
+                {
+                    "text": "AI optimizes satellite constellation management for efficiency.",
+                    "url": "https://spacegeneration.org/the-future-of-ai-in-space-navigating-challenges-and-opportunities"
+                }
+            ]
+        },
+        {
+            "query": "What is the role of AI in lunar dust management?",
+            "answer": "- AI analyzes dust interactions during lunar landings.\n- Tools like SCALPSS predict regolith erosion for safer missions.",
+            "documents": [
+                {
+                    "text": "AI studies lunar dust to improve landing safety and equipment protection.",
+                    "url": "https://www.nasa.gov/missions/nasa-space-techs-favorite-place-to-travel-in-2025-the-moon/"
+                }
+            ]
+        },
+        {
+            "query": "What is the Axiom Mission 4 in 2025?",
+            "answer": "- Axiom Mission 4 sends an Indian astronaut to the ISS in April 2025.\n- AI optimizes mission operations and crew support.",
+            "documents": [
+                {
+                    "text": "Axiom Mission 4 uses AI for efficient ISS operations in 2025.",
+                    "url": "https://www.livescience.com/space/space-exploration/coolest-space-missions-coming-in-2025"
+                }
+            ]
+        },
+        {
+            "query": "How does AI aid ISS operations?",
+            "answer": "- AI schedules tasks and monitors systems on the ISS.\n- It supports astronauts with virtual assistants.",
+            "documents": [
+                {
+                    "text": "AI enhances ISS efficiency with task scheduling and virtual assistants.",
+                    "url": "https://www.esa.int/Enabling_Support/Preparing_for_the_Future/Discovery_and_Preparation/Artificial_intelligence_in_space"
+                }
+            ]
+        },
+        {
+            "query": "What is AI’s role in deep space probes?",
+            "answer": "- AI enables probes to make autonomous scientific discoveries.\n- It selects and transmits valuable data without Earth commands.",
+            "documents": [
+                {
+                    "text": "AI-driven probes autonomously explore deep space and prioritize data.",
+                    "url": "https://www.spacedaily.com/reports/The_Role_of_Artificial_Intelligence_in_Space_Exploration_999.html"
+                }
+            ]
+        },
+        {
+            "query": "How does AI improve mission planning?",
+            "answer": "- AI optimizes schedules and resource allocation.\n- Tools like ASPEN streamline complex mission timelines.",
+            "documents": [
+                {
+                    "text": "AI tools like ASPEN enhance mission planning efficiency.",
+                    "url": "https://www.nasa.gov/general/2024-ai-use-cases/"
+                }
+            ]
+        },
+        {
+            "query": "What is the ClearSpace-1 mission?",
+            "answer": "- ClearSpace-1 is a 2025 mission to remove space debris.\n- It uses AI for precise targeting and capture.",
+            "documents": [
+                {
+                    "text": "ClearSpace-1 employs AI to capture and remove orbital debris.",
+                    "url": "https://www.linkedin.com/pulse/top-5-spacetech-trends-look-out-2023-hello-space-systems"
+                }
+            ]
+        },
+        {
+            "query": "How does AI support space robotics?",
+            "answer": "- AI enables robots to perform autonomous tasks like repairs.\n- Examples include InspeCity’s RAMA for satellite maintenance.",
+            "documents": [
+                {
+                    "text": "AI powers autonomous robots for in-orbit satellite repairs.",
+                    "url": "https://www.startus-insights.com/innovators-guide/space-technology-trends/"
+                }
+            ]
+        },
+        {
+            "query": "What is India’s IndiaAI mission?",
+            "answer": "- IndiaAI is a 2024 initiative to build AI infrastructure.\n- It supports space tech with cost-effective AI solutions.",
+            "documents": [
+                {
+                    "text": "IndiaAI fosters AI development for space and other sectors.",
+                    "url": "https://www.orfonline.org/research/ai-in-space-operations-opportunities-and-challenges"
+                }
+            ]
+        },
+        {
+            "query": "How does AI enhance Chandrayaan-3?",
+            "answer": "- AI improves navigation and data analysis for lunar missions.\n- It supports Chandrayaan-3’s rover and lander operations.",
+            "documents": [
+                {
+                    "text": "AI aids Chandrayaan-3 with autonomous navigation and data processing.",
+                    "url": "https://www.orfonline.org/research/ai-in-space-operations-opportunities-and-challenges"
+                }
+            ]
+        },
+        {
+            "query": "What is AI-driven generative design in space?",
+            "answer": "- Generative design uses AI to optimize spacecraft components.\n- It creates lighter, stronger designs for missions.",
+            "documents": [
+                {
+                    "text": "AI-driven generative design produces efficient spacecraft parts.",
+                    "url": "https://nstxl.org/ai-driven-advancements-in-space/"
+                }
+            ]
+        },
+        {
+            "query": "How does AI help detect exoplanets?",
+            "answer": "- AI analyzes starlight dips to identify exoplanets.\n- It processes Kepler telescope data for planetary discoveries.",
+            "documents": [
+                {
+                    "text": "AI detects exoplanets by analyzing light patterns from stars.",
+                    "url": "https://www.forbes.com/sites/bernardmarr/2023/04/10/artificial-intelligence-in-space-the-amazing-ways-machine-learning-is-helping-to-unravel-the-mysteries-of-the-universe/"
+                }
+            ]
+        },
+        {
+            "query": "What is AI’s role in space weather prediction?",
+            "answer": "- AI predicts solar flares and space weather events.\n- It analyzes satellite data for accurate forecasts.",
+            "documents": [
+                {
+                    "text": "AI enhances space weather prediction using satellite data.",
+                    "url": "https://spacegeneration.org/the-future-of-ai-in-space-navigating-challenges-and-opportunities"
+                }
+            ]
+        },
+        {
+            "query": "How does AI support lunar habitat construction?",
+            "answer": "- AI designs and controls robots for lunar construction.\n- It optimizes structures like LUNGS for sustainability.",
+            "documents": [
+                {
+                    "text": "AI enables robots to build sustainable lunar habitats.",
+                    "url": "https://www.nasa.gov/news-release/nasa-awards-2025-innovative-technology-concept-studies/"
+                }
+            ]
+        },
+        {
+            "query": "What is the Helicity Drive in 2025?",
+            "answer": "- Helicity Drive is a fusion propulsion system for spacecraft.\n- It’s studied in 2025 for heliosphere exploration.",
+            "documents": [
+                {
+                    "text": "Helicity Drive uses AI to optimize fusion propulsion for deep space.",
+                    "url": "https://www.nasa.gov/news-release/nasa-awards-2025-innovative-technology-concept-studies/"
+                }
+            ]
+        },
+        {
+            "query": "How does AI improve spacecraft manufacturing?",
+            "answer": "- AI optimizes 3D printing for rocket production.\n- It enhances material use and structural integrity.",
+            "documents": [
+                {
+                    "text": "AI-driven 3D printing streamlines spacecraft manufacturing.",
+                    "url": "https://nstxl.org/ai-driven-advancements-in-space/"
+                }
+            ]
+        },
+        {
+            "query": "What is AI’s role in orbital mechanics?",
+            "answer": "- AI calculates optimal trajectories and orbits.\n- It enhances efficiency for satellite and mission paths.",
+            "documents": [
+                {
+                    "text": "AI optimizes orbital mechanics for spacecraft navigation.",
+                    "url": "https://nstxl.org/ai-driven-advancements-in-space/"
+                }
+            ]
+        },
+        {
+            "query": "How does AI assist in space cybersecurity?",
+            "answer": "- AI detects and prevents cyberattacks on space systems.\n- It protects mission data from adversarial threats.",
+            "documents": [
+                {
+                    "text": "AI safeguards space systems against cyber vulnerabilities.",
+                    "url": "https://spacegeneration.org/the-future-of-ai-in-space-navigating-challenges-and-opportunities"
+                }
+            ]
+        },
+        {
+            "query": "What is the Rosalind Franklin rover?",
+            "answer": "- Rosalind Franklin is ESA’s Mars rover for 2028.\n- In 2025, AI enhances its autonomous navigation tests.",
+            "documents": [
+                {
+                    "text": "AI supports Rosalind Franklin’s autonomous Martian exploration.",
+                    "url": "https://blogs.esa.int/exploration/the-power-of-ai-in-space-exploration/"
+                }
+            ]
+        },
+        {
+            "query": "How does AI help with space data processing?",
+            "answer": "- AI processes massive datasets from satellites and rovers.\n- It extracts insights faster than human analysis.",
+            "documents": [
+                {
+                    "text": "AI accelerates data processing for space missions.",
+                    "url": "https://www.aiacceleratorinstitute.com/ai-in-space-exploration/"
+                }
+            ]
+        },
+        {
+            "query": "What is the role of AI in space-based solar power?",
+            "answer": "- AI optimizes energy collection and transmission.\n- It supports sustainable power for space missions.",
+            "documents": [
+                {
+                    "text": "AI enhances space-based solar power systems for efficiency.",
+                    "url": "https://hexstaruniverse.com/key-space-trends-2025/"
+                }
+            ]
+        },
+        {
+            "query": "How does AI aid in asteroid mining?",
+            "answer": "- AI identifies resource-rich asteroids.\n- It optimizes robotic mining operations in space.",
+            "documents": [
+                {
+                    "text": "AI supports asteroid mining by analyzing resource potential.",
+                    "url": "https://www.linkedin.com/pulse/top-5-spacetech-trends-look-out-2023-hello-space-systems"
+                }
+            ]
+        },
+        {
+            "query": "What is AI’s role in the lunar Gateway?",
+            "answer": "- AI optimizes operations for the lunar Gateway station.\n- It supports autonomous systems and crew assistance.",
+            "documents": [
+                {
+                    "text": "AI enhances lunar Gateway operations with autonomy.",
+                    "url": "https://blogs.esa.int/exploration/the-power-of-ai-in-space-exploration/"
+                }
+            ]
+        },
+        {
+            "query": "How does AI improve rocket trajectory optimization?",
+            "answer": "- AI calculates fuel-efficient rocket paths.\n- It adjusts trajectories in real-time for accuracy.",
+            "documents": [
+                {
+                    "text": "AI optimizes rocket trajectories for efficiency and safety.",
+                    "url": "https://analyticsindiamag.com/ai-trends/top-trends-that-will-dominate-the-spacetech-industry-in-2023/"
+                }
+            ]
+        },
+        {
+            "query": "What is the role of AI in exomoon exploration?",
+            "answer": "- AI analyzes data from moons like Europa or Titan.\n- It supports autonomous probes for potential life detection.",
+            "documents": [
+                {
+                    "text": "AI aids exploration of exomoons for signs of life.",
+                    "url": "https://www.forbes.com/sites/bernardmarr/2023/04/10/artificial-intelligence-in-space-the-amazing-ways-machine-learning-is-helping-to-unravel-the-mysteries-of-the-universe/"
+                }
+            ]
+        },
+        {
+            "query": "How does AI support space mission safety?",
+            "answer": "- AI monitors systems for anomalies and predicts failures.\n- It enhances safety through real-time decision-making.",
+            "documents": [
+                {
+                    "text": "AI improves mission safety by detecting anomalies early.",
+                    "url": "https://www.spacedaily.com/reports/The_Role_of_Artificial_Intelligence_in_Space_Exploration_999.html"
+                }
+            ]
+        }
+    ]
