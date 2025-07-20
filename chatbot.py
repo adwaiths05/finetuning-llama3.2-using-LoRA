@@ -7,46 +7,39 @@ from langchain.memory import ConversationBufferMemory
 from sentence_transformers import SentenceTransformer
 import json
 import numpy as np
+import faiss
 
 app = FastAPI(title="Ollama Chatbot with RAG", version="1.0")
 
-# Allow CORS for HTML UI
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
-# Initialize Ollama model
 llm = Ollama(model="llama3.2")
 
-# Set up memory
 memory = ConversationBufferMemory()
 
-# Load dataset for RAG
 with open("dataset.json", "r") as f:
     dataset = json.load(f)
 
-# Initialize embedding model for document retrieval
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
 documents = [entry["documents"][0] for entry in dataset]
 document_embeddings = embedder.encode(documents)
 
-# Create prompt template with tone, history, and retrieved document
-# Create prompt template with tone, history, and retrieved document
+dimension = document_embeddings.shape[1]
+index = faiss.IndexFlatL2(dimension)
+index.add(document_embeddings.astype(np.float32))
+
 prompt = ChatPromptTemplate.from_template(
     "You’re a {tone} assistant. Conversation history: {history}\n"
     "Retrieved context: {context}\nUser: {input}\n"
     "Summarize your answer as a single, concise paragraph."
 )
 
-
-# Create chain
 chain = prompt | llm | StrOutputParser()
 
-# Retrieve top relevant document
 def retrieve_document(query):
-    query_embedding = embedder.encode(query)
-    similarities = np.dot(document_embeddings, query_embedding) / (
-        np.linalg.norm(document_embeddings, axis=1) * np.linalg.norm(query_embedding)
-    )
-    top_idx = np.argmax(similarities)
+    query_embedding = embedder.encode([query]).astype(np.float32)
+    distances, indices = index.search(query_embedding, k=1)
+    top_idx = indices[0][0]
     return documents[top_idx]
 
 @app.post("/chat")
