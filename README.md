@@ -1,4 +1,4 @@
-# Finetuning LLaMA3.2 with and LoRA
+# Finetuning LLaMA3.2 with LoRA
 
 ## Overview
 A **Retrieval-Augmented Generation (RAG)**-powered chatbot fine-tuned with **LoRA** to answer questions about **AI in space technology** and **2025 missions**. Combines scalable backend logic with a responsive frontend for an engaging user experience.
