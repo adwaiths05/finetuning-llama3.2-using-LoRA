@@ -7,7 +7,6 @@ A **Retrieval-Augmented Generation (RAG)**-powered chatbot fine-tuned with **LoR
 
 ## Features
 
-- **RAG Implementation**: Uses FAISS for fast, relevant document retrieval from `dataset.json` (50 curated Q&A pairs).
 - **LoRA Fine-Tuning**: Enhances LLaMA3.2 with low-rank adaptation for efficient training on space tech dataset.
 - **Tone Selection**: Supports **Friendly**, **Formal**, or **Witty** response styles.
 - **Responsive Design**: Optimized for all devices using Bootstrap 5.
