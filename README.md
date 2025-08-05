@@ -1,7 +1,7 @@
 # Finetuning LLaMA3.2 with LoRA
 
 ## Overview
-An AI powered chatbot fine-tuned with **LoRA** to answer questions about **AI in space technology** and **2025 missions**. Combines scalable backend logic with a responsive frontend for an engaging user experience.
+An AI powered chatbot fine-tuned with **LoRA** to answer questions about **AI in space technology**. Combines scalable backend logic with a responsive frontend for an engaging user experience.
 
 ---
 
